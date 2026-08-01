@@ -4,7 +4,7 @@ A machine learning project designed to identify football players with similar st
 
 The system allows the user to select a reference player and generates ranked lists of comparable players using clustering, cosine similarity, and neural-network embeddings. The project is intended as a decision-support tool for football scouting and recruitment.
 
-**Key features:** 12 professional leagues · Outfield player analysis · Per-90 statistics · Player clustering · Cosine similarity · Neural-network embeddings · Interpretable recommendations
+**Key features:** Outfield player analysis · Per-90 statistics · Player clustering · Cosine similarity · Neural-network embeddings · Interpretable recommendations
 
 ---
 
