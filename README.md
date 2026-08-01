@@ -8,6 +8,12 @@ The system allows the user to select a reference player and generates ranked lis
 
 ---
 
+# Author
+
+Sebastian Miramontes Soto
+
+---
+
 ## Project Objective
 
 Football clubs often need to identify replacements, alternatives, or players with characteristics similar to a specific footballer.
