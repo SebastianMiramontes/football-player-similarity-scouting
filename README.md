@@ -130,20 +130,16 @@ Before applying the models, the data is prepared through:
 - Categorical variable encoding
 - Numerical feature standardization
 
-Standardization is important because football variables use different numerical scales. Without it, variables with larger values, such as total passes, could have more influence than variables with smaller values, such as goals per 90.
-
 ### 2. Player Clustering
 
-Clustering methods are used to group players with similar statistical profiles.
+Two unsupervised clustering methods are used to group players with similar statistical profiles:
 
-The clusters help identify general player types and provide additional context for the similarity rankings. The system can evaluate whether a recommended player belongs to a statistical group similar to that of the selected player.
+- **K-Means Clustering:** divides the players into a predefined number of groups by assigning each player to the nearest cluster center.
+- **Agglomerative Clustering:** uses a hierarchical approach that begins with each player in an individual group and gradually combines the most similar groups.
 
-Clustering can also be used to compare:
+Using both methods makes it possible to compare two different ways of organizing player profiles. K-Means creates groups around central statistical profiles, while Agglomerative Clustering identifies hierarchical relationships between players.
 
-- Recommendations from the complete dataset
-- Recommendations from related player clusters
-- Players consistently grouped together by different methods
-- Differences between clustering results
+The cluster assigned by each method is used to provide additional context for the similarity rankings. For every recommended player, the system checks whether they share a K-Means cluster, an Agglomerative cluster, or both clusters with the selected player.
 
 ### 3. Cosine Similarity
 
