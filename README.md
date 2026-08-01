@@ -8,7 +8,7 @@ The system allows the user to select a reference player and generates ranked lis
 
 ---
 
-# Author
+## Author
 
 Sebastian Miramontes Soto
 
@@ -53,13 +53,13 @@ Match-level data is processed and aggregated to create a statistical profile for
 
 ## Player Profiles
 
-The current version analyzes outfield players with over 450 league minutes played from January 2025 to June 2026:
+The current version analyzes outfield players who accumulated at least 450 league minutes between January 2025 and June 2026:
 
 - Defenders
 - Midfielders
 - Forwards
 
-Goalkeepers are excluded because their performance requires a different set of position-specific variables, such as saves, goals prevented, crosses stopped, and goalkeeper distribution.
+Goalkeepers are excluded because their performance requires a different set of position-specific variables.
 
 Players are represented using both performance statistics and categorical information.
 
